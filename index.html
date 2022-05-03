@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Raleway:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+        <canvas id="canvas"></canvas>
+        <header >
+            <div class="header_wrap">
+                <h1>Hello, I'm <span class="light"> Nikol</span>.</h1>
+                <h2>I'm front-end web developer</h2>
+                <div class="header_button">
+                    <a href="#portfolio"><button>View my work <img class="pointer" src="./img/pointer1.png" alt="pointer"></button></a>
+                    
+                </div>
+            </div>
+
+        </header>
+        <div class="nav_wrap_background">
+            <nav class="nav_wrap">
+                <a href="#">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#portfolio">PORTFOLIO</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+        <main>
+            <section id="about">
+                <h1>ABOUT</h1>
+                <div class="about_line"></div>
+                <div class="about_wrap">
+                    <div class="responsibility">
+                        <img src="./img/Untitled-1.png" alt="respons">
+                        <h4>Industriousness</h4>
+                        <p>Unsolved problem drags on...</p>
+                    </div>
+                    <div class="responsibility">
+                        <img src="./img/Untitled-1.png" alt="respons">
+                        <h4>Responsibility</h4>
+                        <p>I always try to do everything that is expected of me...</p>
+                    </div>
+                    <div class="responsibility">
+                        <img src="./img/Untitled-1.png" alt="respons">
+                        <h4>Fast learner</h4>
+                        <p>Study as if you are constantly feeling the lack of your knowledge, and as if you are constantly afraid of losing your knowledge. <span>Confucius</span></p>
+                    </div>
+                    <div class="responsibility">
+                        <img src="./img/Untitled-1.png" alt="respons">
+                        <h4>Independence</h4>
+                        <p>Think for yourself, but listen to someone else's advice. <span>Homer</span></p>
+                    </div>
+                </div>
+                <div class="about_exp">
+                    <div class="foto">
+                        <img src="./img/01.png" alt="">
+                        <p>It's me</p>
+                    </div>
+                    <div class="exp">
+                        <h4>Expereance</h4>
+                        <p></p>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Java Script</li>
+                            <li>React (in process...)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio">
+                <h1>PROJECTS</h1>
+                <div class="about_line"></div>
+                <div class="projects_wrap">
+                    <div class="projects_wrap_gaz">
+                        <img src="./img/gazpolski.PNG" class="front" alt="gaz">
+                        <div class="back">
+                            <div class="back_top">
+                                <div>
+                                    Do you want to learn Polish?
+                                </div>
+                                <div class="back_top_sub">
+                                    HTML/CSS/JS<br>It's my first project :)
+                                </div>
+                            </div>
+                            <div class="back_bottom"><a href="https://gazpolski.com/" target="blank">get acquainted!</a></div>
+                        </div>
+                    </div>
+                    <div class="projects_wrap_gaz">
+                        <img src="./img/cow.PNG" class="front" alt="cow">
+                        <div class="back">
+                            <div class="back_top">
+                                <div>
+                                    the game is the best way to learn a language
+                                </div>
+                                <div class="back_top_sub">
+                                    JS canvas<br>bulls and cows
+                                </div>
+                            </div>
+                            <div class="back_bottom"><a href="https://affectionate-austin-833b6c.netlify.app" target="blank">let's go!</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="50" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
+            </svg>
+
+            <div id="contact" class="footer_wrap">
+                <h1>CONTACT</h1>
+                <div class="about_line"></div>
+                
+                <form action="./send.php" method="post">
+                    <input type="text" id="first_name" name="first_name" placeholder="Name"><br>
+                    <input type="text" id="email" name="email" required placeholder="Email"><br>
+                    <textarea rows="5" id="message" name="message" cols="30"></textarea><br>
+                    <div class="form_submit">
+                         <button type="submit" name="submit" value="Submit">Sabmit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="to_home"><a href="#">&#8810;</a></div>
+            <div class="media">
+                <div class="media_wrap">
+                    <a href="https://www.linkedin.com/in/oksanagazun/" class="in_wrap" target="blank"><button class="in">in</button></a>
+                    <div class="in_wrap"><button class="in">f</button></div>
+                    <div class="in_wrap"><button class="in">cd</button></div>
+                </div>
+                <h5>Gazun &#169;2022</h5>
+            </div>
+        </footer>
+    <script src="./responsibility.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html>
